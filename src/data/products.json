@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "title": "Enterito",
+        "description": "Enterito jardinero color azul, corderoy",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Tree",
+        "category": "Enteritos",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1675183690442-b5de4b8a3571?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Camisa lunares",
+        "description": "Camisa blanca con lunares grises",
+        "price": 899,
+        "discountPercentage": 17.94,
+        "rating": 4.44,
+        "stock": 34,
+        "brand": "Apple",
+        "category": "Ropa de Verano",
+        "images": [
+            "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Campera Milton",
+        "description": "Campera Milton Corderoy marrón, relleno corderito",
+        "price": 1249,
+        "discountPercentage": 15.46,
+        "rating": 4.09,
+        "stock": 36,
+        "brand": "Milton",
+        "category": "Ropa de Invierno",
+        "images": ["https://plus.unsplash.com/premium_photo-1675183713626-81e6de4552e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
+    },
+    {
+        "id": 4,
+        "title": "Saquito Pompon",
+        "description": "Saquito tejido de lana color hueso con Pompones de colores",
+        "price": 280,
+        "discountPercentage": 17.91,
+        "rating": 4.3,
+        "stock": 123,
+        "brand": "OPPO",
+        "category": "Ropa de Invierno",
+        "images": ["https://images.unsplash.com/photo-1530845645774-eed359045642?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Conjunto Alma",
+        "description": "Conjunto de dos piezas color Lila con volados, tela Gaza",
+        "price": 499,
+        "discountPercentage": 10.58,
+        "rating": 4.09,
+        "stock": 32,
+        "brand": "Sueños",
+        "category": "Conjuntos",
+        "images": ["https://images.unsplash.com/photo-1652500119378-ae951a627737?q=80&w=2007&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Pañal Ecologico",
+        "description": "Pañal Ecologico lavable tema: espacial, regulable",
+        "price": 1749,
+        "discountPercentage": 11.02,
+        "rating": 4.57,
+        "stock": 83,
+        "brand": "Luna",
+        "category": "Novedades",
+        "images": [
+            "https://images.unsplash.com/photo-1567863998504-9941989ecf6f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Vestido Maria Isabella",
+        "description": "Vestido Maria Isabella con moño",
+        "price": 1499,
+        "discountPercentage": 4.15,
+        "rating": 4.25,
+        "stock": 50,
+        "brand": "Aurora",
+        "category": "Ropa de Verano",
+        "images": [
+            "https://images.unsplash.com/photo-1652501046533-1b232088aafe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    }
+]
