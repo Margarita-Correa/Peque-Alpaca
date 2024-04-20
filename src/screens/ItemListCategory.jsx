@@ -12,11 +12,19 @@ const ItemListCategory = ({categorySelected = "", setCategorySelected = () =>{}}
   const [productsFiltered, setProducstFiltered] = useState([])
 
   useEffect(()=>{
+
+    regex =/\d/
+    const containesDigits = (regex.test(keyword))
+    if(containesDigits){
+      setError("Use words to search")
+      return
+    }
+
     const productsPreFiltered = products.filter(product => product.category === categorySelected)
     const productsFilter = productsPreFiltered.filter(product => product.title.toLocaleLowerCase().includes(keyword))
     setProducstFiltered(productsFilter)
     setError("")
-  }, [keyword])
+  }, [keyword,categorySelected])
 
   return (
     <View style={styles.flatListContainer}>
@@ -35,7 +43,7 @@ export default ItemListCategory
 const styles = StyleSheet.create({
   flatListContainer: {
     width: '100%',
-    backgroundColor: colors.lilac400,
+    backgroundColor: colors.lilac200,
     height: '100%',
     flexDirection: 'column',
     justifyContent: 'center',

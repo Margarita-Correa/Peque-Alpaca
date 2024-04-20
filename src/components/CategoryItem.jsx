@@ -17,7 +17,7 @@ const CategoryItem = ({category, selectCategory=()=>{}}) => {
   
   const styles = StyleSheet.create({
       categoryContainer: {
-          backgroundColor: colors.lilac600,
+          backgroundColor: colors.lilac400,
           width: 250,
           height: 40,
           shadowColor: "#000",
@@ -30,7 +30,7 @@ const CategoryItem = ({category, selectCategory=()=>{}}) => {
           elevation: 6,
       },
       text: {
-          color: colors.black,
+          color: colors.lilac900,
           textAlign: 'center',
           fontSize: 20
       }

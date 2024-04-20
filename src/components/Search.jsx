@@ -11,7 +11,7 @@ const Search = ({onSearch=()=>{}, error="", goBack=()=>{}}) => {
     <View style={styles.container}>
       <TextInput 
         style={styles.input}
-        placeholder="..."
+        placeholder="Search product..."
         value={keyword}
         onChangeText={setKeyword}
       />
@@ -39,8 +39,9 @@ const styles = StyleSheet.create({
     gap: 18,
   },
   input: {
-    width: 250,
-    padding: 8,
+    width: 200,
+    padding: 6,
+    marginTop:4,
     fontSize: 18,
     backgroundColor: colors.lilac400,
     color: colors.platinum,
