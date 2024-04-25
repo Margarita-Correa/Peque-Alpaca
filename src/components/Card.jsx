@@ -14,7 +14,7 @@ const Card = ({children,style}) => {
   
   const styles = StyleSheet.create({
       container: {
-          backgroundColor: colors.lilac600,
+          backgroundColor: colors.lilac200,
           width: 250,
           height: 40,
           shadowColor: "#000",

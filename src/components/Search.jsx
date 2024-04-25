@@ -11,7 +11,7 @@ const Search = ({onSearch=()=>{}, error="", goBack=()=>{}}) => {
     <View style={styles.container}>
       <TextInput 
         style={styles.input}
-        placeholder="Search product..."
+        placeholder="Buscar producto..."
         value={keyword}
         onChangeText={setKeyword}
       />

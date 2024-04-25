@@ -23,7 +23,7 @@ const Home = ({setCategorySelected}) => {
   const styles = StyleSheet.create({
     flatListContainer: {
       width: '100%',
-      backgroundColor: colors.lilac200,
+      backgroundColor: colors.lilac600,
       height: '100%',
       flexDirection: 'column',
       justifyContent: 'center',
