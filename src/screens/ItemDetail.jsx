@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react'
 import products from '../data/products.json'
 import { colors } from '../constants/colors'
 
-const ItemDetail = ({ idSelected, setProductSelected }) => {
+const ItemDetail = ({route, setProductSelected }) => {
 
   const [product, setProduct] = useState(null)
   const [orientation, setOrientation ] = useState("portrait")
   const {height, width} = useWindowDimensions()
 
+const {productId : idSelected} = route.param
 
   useEffect(()=>{
     const productSelected = products.find(

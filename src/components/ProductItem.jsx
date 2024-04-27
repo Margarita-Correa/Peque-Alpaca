@@ -3,11 +3,11 @@ import React from 'react'
 import Card from './Card'
 import { colors } from '../constants/colors'
 
-const ProductItem = ({product, setItemIdSelected = ()=>{}}) => {
+const ProductItem = ({product, navigation}) => {
 
   return (
     <Card style={styles.additionalStylesCard}>
-      <Pressable style={styles.pressable} onPress={()=>setItemIdSelected(product.id)}>
+      <Pressable style={styles.pressable} onPress={()=>navigation.navigate('ItemDetail', {productId: product.id})}>
         <Text style={styles.textCategory}>{product.title}</Text>
         <Image
           resize='cover'
