@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react'
 import products from '../data/products.json'
 import { colors } from '../constants/colors'
 
-const ItemDetail = ({route, setProductSelected }) => {
+const ItemDetail = ({route, navigation}) => {
 
   const [product, setProduct] = useState(null)
   const [orientation, setOrientation ] = useState("portrait")
   const {height, width} = useWindowDimensions()
 
-const {productId : idSelected} = route.param
+const {productId : idSelected} = route.params
 
   useEffect(()=>{
     const productSelected = products.find(
@@ -24,7 +24,7 @@ const {productId : idSelected} = route.param
 
   return (
     <View style={styles.detailContainer}>          
-    <Button onPress={() => setProductSelected("")} title="Ver otros productos" />
+    <Button onPress={() => navigation.goBack()} title="Ver otros productos" />
       {product ? (
         <View style={styles.detail}>
           <Image
@@ -48,7 +48,7 @@ export default ItemDetail
 
 const styles = StyleSheet.create({
   detailContainer:{
-    marginTop:20,
+    marginTop:10,
   },
   detail: {
     flexDirection: "column",

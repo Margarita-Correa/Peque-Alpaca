@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View } from "react-native"
 import { colors } from "../constants/colors"
 
-const Card = ({children,style}) => {
+const Card = ({children, style}) => {
     return (
       <View style={{...styles.container, ...style}}>
           {children}

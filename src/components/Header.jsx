@@ -2,13 +2,13 @@ import React from 'react'
 import {Image, StyleSheet, Text, View, useWindowDimensions } from 'react-native'
 import { colors } from '../constants/colors'
 
-const Header = ({title}) => {
+const Header = ({route}) => {
   const {height, width}= useWindowDimensions()
 
   return (
     <View style = {styles.container}>
       <Image style={styles.logo } source={require('../../assets/logo.png')}/>
-      <Text style = {width >= 360 ? styles.text : styles.textmin}>{title}</Text>
+      <Text style = {width >= 360 ? styles.text : styles.textmin}>{route.name}</Text>
     </View>
   )
 }
@@ -22,17 +22,17 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     alignItems:'center',
     justifyContent:'flex-start',
-    backgroundColor: colors.lilac600,
+    backgroundColor: colors.lilac900,
   },
   text: {
     fontFamily:'Sacramento',
     fontSize: 30,
-    color: colors.lilac900,
+    color: colors.lilac200,
   },
   textmin:{
     fontFamily:'Sacramento',
     fontSize: 20,
-    color: colors.lilac900,
+    color: colors.lilac200,
   },
   logo:{
     width:"8%",
