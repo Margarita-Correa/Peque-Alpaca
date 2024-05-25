@@ -2,6 +2,7 @@ import { Button, Image, StyleSheet, Text, View, useWindowDimensions } from 'reac
 import React, { useEffect, useState } from 'react'
 import products from '../data/products.json'
 import { colors } from '../constants/colors'
+import Counter from '../components/Counter'
 
 const ItemDetail = ({route, navigation}) => {
 
@@ -36,6 +37,7 @@ const {productId : idSelected} = route.params
             <Text style={styles.title}>{product.title}</Text>
             <Text style={styles.description}>{product.description}</Text>
             <Text style={styles.price}>${product.price}</Text>
+            <Counter />
             <Button title="Agregar al carrito"></Button>
           </View>
         </View>
