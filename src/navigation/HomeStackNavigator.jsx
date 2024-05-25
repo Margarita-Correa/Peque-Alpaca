@@ -11,17 +11,21 @@ const Stack = createNativeStackNavigator()
 const HomeStackNavigator = () => {
   return (
     <Stack.Navigator
-    initialRouteName='Pequeña Alpaca'
+    initialRouteName='Home'
     screenOptions={{}} >
     <Stack.Screen  
         component={Home} 
-        name='Home' />
+        name='Home'
+        options={{title:'Bienvenidos'}}
+ />
     <Stack.Screen 
       component={ItemListCategory}
-      name='ItemListCategory'ssssss
+      name='ItemListCategory'
+      options={{title:'Categorias'}}
       />
       <Stack.Screen 
       component={ItemDetail}
+      options={{title:'Detalle'}}
       name='ItemDetail'
       />
     </Stack.Navigator>

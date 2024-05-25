@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "title": "Enterito",
+    "description": "Enterito jardinero color azul, corderoy",
+    "price": 549,
+    "discountPercentage": 12.96,
+    "rating": 4.69,
+    "stock": 94,
+    "brand": "Tree",
+    "category": "Enteritos",
+    "images": [
+        "https://plus.unsplash.com/premium_photo-1675183690442-b5de4b8a3571?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "quantity":2
+},
+{
+    "id": 2,
+    "title": "Camisa lunares",
+    "description": "Camisa blanca con lunares grises",
+    "price": 899,
+    "discountPercentage": 17.94,
+    "rating": 4.44,
+    "stock": 34,
+    "brand": "Apple",
+    "category": "Ropa de Verano",
+    "images": [
+        "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "quantity": 1
+}
+]

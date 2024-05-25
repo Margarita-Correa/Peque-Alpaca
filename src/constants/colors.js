@@ -1,8 +1,8 @@
 export const colors = {
-    ligth000: '#EFEBE1',
-    lilac900: '#544772',
-    lilac600: '#BEADFA',
-    lilac400: '#D0BFFF',
-    lilac200: '#DCD2F6',
-
+    ligth000: '#efedf5',
+    lilac900: '#756899',
+    lilac600: '#cfc2f2',
+    lilac400: '#c1b6e0',
+    lilac200: '#ece6fc',
+    black: '#000'
 }

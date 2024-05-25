@@ -24,17 +24,17 @@ const {productId : idSelected} = route.params
 
   return (
     <View style={styles.detailContainer}>          
-    <Button onPress={() => navigation.goBack()} title="Ver otros productos" />
+    <Button  onPress={() => navigation.goBack()} title="Ver otros productos" />
       {product ? (
         <View style={styles.detail}>
           <Image
             source={{ uri: product.images[0] }}
             style={orientation === "portrait" ? styles.image : styles.imageLandscape}
-            resizeMode='cover'
+            resizeMode='contain'
           />
           <View style={ styles.textContainer}>
-            <Text>{product.title}</Text>
-            <Text>{product.description}</Text>
+            <Text style={styles.title}>{product.title}</Text>
+            <Text style={styles.description}>{product.description}</Text>
             <Text style={styles.price}>${product.price}</Text>
             <Button title="Agregar al carrito"></Button>
           </View>
@@ -48,13 +48,15 @@ export default ItemDetail
 
 const styles = StyleSheet.create({
   detailContainer:{
-    marginTop:10,
+    flex:1,
+    backgroundColor:colors.lilac400,
   },
   detail: {
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
     marginTop: 20,
-    padding:20,
+    padding:10,
+    margin:15,
     borderRadius:20,
     backgroundColor: colors.lilac200
   },
@@ -69,8 +71,17 @@ const styles = StyleSheet.create({
   textContainer: {
     flexDirection: "column",
   },
-  price: {
-    textAlign: 'right',
-    width: '100%'
+  title:{
+    textAlign: "center",
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+  description:{
+    textAlign:"left",
+  },
+  price:{
+    textAlign:"left",
+    fontWeight: 'bold',
+    fontSize: 20,
   }
 })

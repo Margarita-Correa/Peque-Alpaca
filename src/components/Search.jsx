@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useState } from 'react'
-import {FontAwesome6} from '@expo/vector-icons'
+import {FontAwesome} from '@expo/vector-icons'
 import {FontAwesome5} from "@expo/vector-icons"
 import {colors} from '../constants/colors'
 
@@ -16,13 +16,10 @@ const Search = ({onSearch=()=>{}, error="", goBack=()=>{}}) => {
         onChangeText={setKeyword}
       />
       <Pressable onPress={()=> onSearch(keyword)}>
-        <FontAwesome6 name="searchengin" size={24} color="black"/>
+        <FontAwesome name="search" size={24} color="black"/>
       </Pressable>
       <Pressable onPress={()=> setKeyword("")}>
         <FontAwesome5 name="backspace" size={24} color="black"/>
-      </Pressable>
-      <Pressable onPress={goBack}>
-        <FontAwesome5 name="home" size={24} color="black"/>
       </Pressable>
       {error ? <Text>{error}</Text>:null}
     </View>
@@ -43,7 +40,7 @@ const styles = StyleSheet.create({
     padding: 6,
     marginTop:4,
     fontSize: 18,
-    backgroundColor: colors.lilac400,
+    backgroundColor: colors.ligth000,
     color: colors.platinum,
     borderRadius: 10,
   },

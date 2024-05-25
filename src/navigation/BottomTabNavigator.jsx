@@ -5,7 +5,9 @@ import HomeStackNavigator from './HomeStackNavigator';
 import Header from '../components/Header';
 import { colors } from '../constants/colors';
 import {FontAwesome5, FontAwesome6} from "@expo/vector-icons"
-import CartStackNavigation from './CartStackNavigation';
+import { MaterialIcons } from '@expo/vector-icons';
+import CartStack from './CartStackNavigator';
+import OrderStack from './OrderStackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -33,7 +35,7 @@ const BottomTabNavigator = () => {
         />
         <Tab.Screen 
             name="Carrito"
-            component={CartStackNavigation}
+            component={CartStack}
             options={{
                 tabBarIcon:({focused})=>{
                     return (
@@ -44,7 +46,19 @@ const BottomTabNavigator = () => {
                 },
             }}
         />
-
+        <Tab.Screen 
+            name="Orders"
+            component={OrderStack}
+            options={{
+                tabBarIcon:({focused})=>{
+                    return (
+                        <View>
+                            <MaterialIcons name="receipt-long" size={24} color={focused ? colors.lilac900 : "black"}/>
+                        </View>
+                    )
+                },
+            }}
+        />
     </Tab.Navigator>
   )
 }
@@ -56,7 +70,6 @@ const styles = StyleSheet.create({
         backgroundColor: colors.lilac200,
         shadowColor: "black",
         elevation: 4,
-        borderRadius: 15,
         height: 60,
     }
 })
