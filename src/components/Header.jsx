@@ -1,8 +1,11 @@
 import React from 'react'
 import {Image, StyleSheet, Text, View, useWindowDimensions } from 'react-native'
 import { colors } from '../constants/colors'
+import { useSelector } from 'react-redux'
 
 const Header = ({route}) => {
+
+  const categorySelected = useSelector(state => state.shop.value.categorySelected)
   const {height, width}= useWindowDimensions()
 
   return (

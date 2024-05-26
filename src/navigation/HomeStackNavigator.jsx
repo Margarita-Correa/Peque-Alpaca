@@ -16,12 +16,12 @@ const HomeStackNavigator = () => {
     <Stack.Screen  
         component={Home} 
         name='Home'
-        options={{title:'Bienvenidos'}}
+        options={{title:'Categorias'}}
  />
     <Stack.Screen 
       component={ItemListCategory}
       name='ItemListCategory'
-      options={{title:'Categorias'}}
+      options={{title:'Productos'}}
       />
       <Stack.Screen 
       component={ItemDetail}

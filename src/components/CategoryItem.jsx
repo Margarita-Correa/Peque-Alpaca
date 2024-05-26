@@ -2,11 +2,21 @@ import React from 'react'
 import {Pressable, StyleSheet, Text } from "react-native"
 import { colors } from "../constants/colors"
 import Card from "./Card"
+import { useDispatch } from 'react-redux'
+import { setCategorySelected } from "../features/Shop/shopSlice"
 
 const CategoryItem = ({category, navigation}) => {
+
+  const dispatch = useDispatch()
+
+  const handleNavigate = ()=>{
+    dispatch(setCategorySelected(category))
+    navigation.navigate('ItemListCategory',{category})
+  }
+
     return (
       <Card>
-        <Pressable onPress={()=>navigation.navigate('ItemListCategory',{category})}>
+        <Pressable onPress={handleNavigate}>
           <Text style={styles.text}>{category}</Text>
         </Pressable>
       </Card>
